@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/hw1.esm.js"></script>
+    <script nomodule src="/build/hw1.js"></script>
+  </head>
+  <body>
+    <my-input></my-input>
+    <my-component></my-component>
+  </body>
+
+  <script>
+    const myInput = document.querySelector('my-input');
+    const myComponent = document.querySelector('my-component');
+    myInput.addEventListener('valueChanged', event => { myComponent.setAttribute('value', event.detail) })
+  </script>
+</html>
