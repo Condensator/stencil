@@ -1,0 +1,1 @@
+export type inputType = "text" | "number" | "range";
